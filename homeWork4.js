@@ -31,19 +31,9 @@ function exercise1() {
 
 function exercise2() {
   const arr = [1, 2, 3, 4, 5, 6, 7];
-  const result = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (i < 2 || i > 4) {
-      result.push(arr[i]);
-    }
-    if (i === 2) {
-      result.push(100);
-      i = 4;
-    }
-  }
-  for (let index = 0; index < result.length; index++) {
-    console.log(result[index]);
-  }
+
+  arr.splice(2, 3, 100)
+  console.log(arr);
 }
 
 // exercise2();
